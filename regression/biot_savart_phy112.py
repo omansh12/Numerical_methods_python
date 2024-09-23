@@ -14,7 +14,7 @@ def SSRes(parameters):
   return np.sum(residuals**2)
 
 
-BestParameters = minimize(SSRes,[20000])
+BestParameters = minimize(SSRes,[200])
 print("The best values of a, b, and c are: \n",BestParameters.x)
 # If you want to print the diagnositc then use the line below:
 # print("The minimization diagnostics are: \n",BestParameters)
